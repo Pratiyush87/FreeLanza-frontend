@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const newRequest = axios.create({
-  baseURL: "http://localhost:8800/api/",
+ baseURL: "https://freelance-app-knrd.onrender.com/api/",
   withCredentials: true,
 });
 
