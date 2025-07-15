@@ -10,6 +10,8 @@ function Navbar() {
   // const [dropdownOpen, setDropdownOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [showSearchBar, setShowSearchBar] = useState(false);
+   const [error, setError] = useState(""); // for showing error
+    const [input, setInput] = useState("");
 
   const { pathname } = useLocation();
 
@@ -37,7 +39,7 @@ function Navbar() {
   }, []);
 
   useEffect(() => {
-    if (scrollPosition >= 370) {
+    if (scrollPosition >= 410) {
       setShowSearchBar(true);
     } else {
       setShowSearchBar(false);
@@ -65,6 +67,15 @@ function Navbar() {
     }
   };
 
+   const handleSubmit = () => {
+    if (input.trim() === "") {
+      setError("Please write something to search.");
+      return;
+    }
+    setError(""); // clear previous errors
+    navigate(`/gigs?search=${input}`);
+  };
+
   return (
     <div className={active || pathname !== "/" ? "navbar active" : "navbar"}>
       <div className="container">
@@ -79,12 +90,15 @@ function Navbar() {
 
           <nav>
             {showSearchBar && (
-              <div className="search-bar">
-                <input
-                  className="searching"
-                  type="search"
-                  placeholder="Search"
-                />
+              <div className="searchBar">
+               <input
+               className="searching"
+                type="text"
+                placeholder='Try "building mobil app"'
+                onChange={(e) => {setInput(e.target.value)
+                  setError("");  // clear error when typing 
+                }} />
+               <img className="buttonB1" src="./img/search.png" alt="" srcset="" onClick={handleSubmit}/>
               </div>
             )}
           </nav>

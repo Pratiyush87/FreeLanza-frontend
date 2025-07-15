@@ -29,7 +29,7 @@ function Popular() {
             "</p>
           </div>
           <div className="author-section">
-            <p className="author-name">Pratiyush Raj</p>
+            <p className="author-name">NIck J Sina</p>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ function Popular() {
 </p>
           </div>
           <div className="author-section">
-            <p className="author-name">Ryan Thompson</p>
+            <p className="author-name">Ryan Carl</p>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ function Popular() {
             "</p>
           </div>
           <div className="author-section">
-            <p className="author-name">David Kime</p>
+            <p className="author-name">Jack Fulkon</p>
           </div>
         </div>
       </div>

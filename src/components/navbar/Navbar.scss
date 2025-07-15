@@ -27,18 +27,42 @@
     justify-content: space-between;
     padding: 20px 0px;
 
-    .searching {
-      width: 300px;
-      height: 38px;
-      border-radius: 50px;
-      padding: 25px;
-    }
+    .searchBar {
+  display: flex;
+  align-items: center;     /* vertically center items */
+  justify-content: space-between; /* space between input and button */
+  width: 300px;            /* slightly wider to accommodate both */
+  border: 2px solid black;
+  border-radius: 45px;
+  padding: 8px 12px;        /* reduce padding to avoid overflow */
+  box-sizing: border-box;
+  background-color: white;  /* optional */
+  gap: 8px; 
+
+ .buttonB1 {
+  padding: 6px 12px;
+  cursor: pointer;
+  
+}               
+}
+
+.searching {
+  flex: 1;                  /* take available space */
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 0 8px;
+  border-radius: 20px;
+}
+
+
 
     .logo {
       font-size: 34px;
       font-weight: bold;
 
-      .text {}
+     
 
       .dot {
         font-weight: bold;

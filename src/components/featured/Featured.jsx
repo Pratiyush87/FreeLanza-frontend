@@ -5,10 +5,17 @@ import { useNavigate } from "react-router-dom";
 function Featured() {
   const [input, setInput] = useState("");
   const navigate = useNavigate();
+  const [error, setError] = useState(""); // for showing error
 
-  const handleSubmit = () => {
+   const handleSubmit = () => {
+    if (input.trim() === "") {
+      setError("Please write something to search.");
+      return;
+    }
+    setError(""); // clear previous errors
     navigate(`/gigs?search=${input}`);
   };
+
   return (
     <div className="featured">
       <div className="container">
@@ -22,11 +29,16 @@ function Featured() {
               <input
                 type="text"
                 placeholder='Try "building mobil app"'
-                onChange={(e) => setInput(e.target.value)}
+                onChange={(e) => {setInput(e.target.value)
+                  setError("");  // clear error when typing
+                }}
               />
             </div>
-            <button onClick={handleSubmit}>Search</button>
+            <button className="search-btn" onClick={handleSubmit}>Search</button>
+             {/* Conditional Error Display */}
+     
           </div>
+           {error && <p style={{ color: "red",marginTop: "0px",fontSize:"20px",paddingLeft:"45px"}}>{error}</p>}
           <div className="popular">
             <span>Popular:</span>
             <button>Web Design</button>
