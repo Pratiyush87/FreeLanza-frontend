@@ -1,0 +1,77 @@
+.writing-service-card {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .writing-service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-color: #cbd5e0;
+  }
+  
+  .writing-service-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+  }
+  
+  .service-content {
+    padding: 20px;
+  }
+  
+  .service-header h3 {
+    font-size: 1.1rem;
+    color: #2d3748;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  .seller-rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .seller {
+    color: #4a5568;
+    font-weight: 600;
+  }
+  
+  .rating {
+    color: #d69e2e;
+  }
+  
+  .service-details {
+    margin: 15px 0;
+    font-size: 0.9rem;
+    color: #4a5568;
+    line-height: 1.6;
+  }
+  
+  .service-details div {
+    margin-bottom: 8px;
+  }
+  
+  .service-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #edf2f7;
+    font-size: 0.95rem;
+  }
+  
+  .price {
+    font-weight: 600;
+    color: #2b6cb0;
+  }
+  
+  .delivery {
+    color: #718096;
+  }
