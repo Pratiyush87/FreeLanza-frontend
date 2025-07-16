@@ -1,0 +1,12 @@
+.freelanza-business-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  // Import component styles
+  @import '../../components/BusinessHero/BusinessHero';
+  @import '../../components/FeaturesSection/FeaturesSection';
+  @import '../../components/HowItWorks/HowItWorks';
+  @import '../../components/Testimonials/Testimonials';
+  @import '../../components/CTA/CTA';
