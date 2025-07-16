@@ -138,8 +138,8 @@ function Home() {
         </div>
       </div>
 
-      <Slide slidesToShow={isMobile ? 2 : 4} arrowsScroll={isMobile ? 2 : 4}>
-        {projects.map((card) => (
+       <Slide slidesToShow={isMobile ? 3 : 5} arrowsScroll={isMobile ? 3 : 5}>
+        {cards.map((card) => (
           <ProjectCard key={card.id} card={card} />
         ))}
       </Slide>
