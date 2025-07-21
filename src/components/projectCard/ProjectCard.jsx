@@ -4,14 +4,12 @@ import "./ProjectCard.scss";
 function ProjectCard({ card }) {
   return (
     <div className="projectCard">
-      <div className="image-container">
-        <img src={card.img} alt={card.cat} className="project-image" />
-      </div>
+      <img src={card.img} alt="" />
       <div className="info">
-        <img src={card.pp} alt={card.username} className="user-avatar" />
+        <img src={card.pp} alt="" />
         <div className="texts">
-          <h2 className="category">{card.cat}</h2>
-          <span className="username">{card.username}</span>
+          <h2>{card.cat}</h2>
+          <span>{card.username}</span>
         </div>
       </div>
     </div>

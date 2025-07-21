@@ -46,7 +46,7 @@
       min-width: 40px;
       border-radius: 50%;
       object-fit: cover;
-      border: 1px solid #f0f0f0;
+      border: 1px solid #3acfda;
     }
 
     .texts {
@@ -80,7 +80,7 @@
     max-width: 100%;
     aspect-ratio: 3/4;
 
-    .info {
+    .info { 
       gap: 12px;
       padding: 12px;
 
@@ -112,4 +112,4 @@
       }
     }
   }
-}
+}  
